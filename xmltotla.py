@@ -123,7 +123,7 @@ def run_tla_model_checker(tla_file_path):
         print(f"Unexpected error: {e}")
 
 def main():
-    xml_file = "withbug.xml"  # Replace with your XML file path
+    xml_file = "bugfix.xml"  # Replace with your XML file path
     tla_file = "generated_workflow.tla"
 
     root = parse_xml(xml_file)
