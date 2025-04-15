@@ -1,0 +1,21 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="1"/>
+    <mxCell id="Client" value="Client" style="umlLifeline" vertex="1" parent="1">
+      <mxGeometry x="80" y="80" width="120" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="Session" value="SessionManager" style="umlLifeline" vertex="1" parent="1">
+      <mxGeometry x="300" y="80" width="120" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="Logout" value="Logout" edge="1" parent="1" source="Client" target="Session">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="200" y="120" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Expire" value="Auto-Expire" edge="1" parent="1" source="Session" target="Client">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="100" y="160" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
