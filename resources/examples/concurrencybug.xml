@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Counter TLA+ Sequence Diagram" id="5YrPcYk9u2Yh6vCdYAcF">
+    <mxGraphModel dx="1074" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Lifelines -->
+        <mxCell id="2" value="Counter System" style="shape=umlLifeline;lifeline=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="140" height="580" as="geometry"/>
+        </mxCell>
+        <!-- Init -->
+        <mxCell id="3" value="INIT: counter = INIT_VALUE" style="shape=umlActivation;" vertex="1" parent="2">
+          <mxGeometry y="0" width="30" height="50" as="geometry"/>
+        </mxCell>
+        <!-- Step 1 -->
+        <mxCell id="4" value="Step 1: counter &gt; 0" style="shape=umlActivation;" vertex="1" parent="2">
+          <mxGeometry y="70" width="30" height="50" as="geometry"/>
+        </mxCell>
+        <!-- Step 2 -->
+        <mxCell id="5" value="Step 2: counter = 0" style="shape=umlActivation;" vertex="1" parent="2">
+          <mxGeometry y="140" width="30" height="50" as="geometry"/>
+        </mxCell>
+        <!-- Invariants -->
+        <mxCell id="6" value="Invariant: counter ≥ 0" style="note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="70" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Invariant_2: counter' ≥ 0" style="note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Invariant_3: counter' = counter - 1" style="note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Step Conditions -->
+        <mxCell id="9" value="Step_Condition: counter &gt; 0 ∧ counter' = counter - 1" style="note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="220" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
